@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Test25.tscn" type="PackedScene" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://ComboRendering.gd" type="Script" id=3]
+
+[node name="Node2D" type="YSort"]
+script = ExtResource( 3 )
+
+[node name="Screen" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+centered = false
+flip_v = true
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 320, 180 )
+size_override_stretch = true
+transparent_bg = true
+handle_input_locally = false
+
+[node name="Spatial" parent="Viewport" instance=ExtResource( 1 )]

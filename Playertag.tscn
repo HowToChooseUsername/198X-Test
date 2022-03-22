@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://battleuialpha.png" type="Texture" id=1]
+
+[node name="Player" type="Node2D"]
+
+[node name="Battleuialpha" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 82, 77, 50, 11 )
+
+[node name="ColorRect" type="ColorRect" parent="Battleuialpha"]
+margin_left = 47.0
+margin_top = 1.0
+margin_right = 49.0
+margin_bottom = 10.0
+color = Color( 0.929412, 0.109804, 0.141176, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

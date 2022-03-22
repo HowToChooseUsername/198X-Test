@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://StatusButtons.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Playertag.tscn" type="PackedScene" id=2]
+[ext_resource path="res://HealthMeter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://battleuialpha.png" type="Texture" id=4]
+
+[node name="PlayerCard" type="Node2D"]
+
+[node name="Battleuialpha" type="Sprite" parent="."]
+texture = ExtResource( 4 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 3, 71, 64, 73 )
+
+[node name="HP" parent="Battleuialpha" instance=ExtResource( 3 )]
+position = Vector2( 18, 30 )
+
+[node name="Meter3" parent="Battleuialpha/HP" instance=ExtResource( 3 )]
+position = Vector2( 18, 0 )
+
+[node name="Meter2" parent="Battleuialpha/HP" instance=ExtResource( 3 )]
+position = Vector2( 9, 0 )
+
+[node name="PP" parent="Battleuialpha" instance=ExtResource( 3 )]
+position = Vector2( 18, 39 )
+
+[node name="Meter3" parent="Battleuialpha/PP" instance=ExtResource( 3 )]
+position = Vector2( 18, 0 )
+
+[node name="Meter2" parent="Battleuialpha/PP" instance=ExtResource( 3 )]
+position = Vector2( 9, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7, 12 )
+
+[node name="StatysAilment" parent="." instance=ExtResource( 1 )]
+position = Vector2( 13, 56 )

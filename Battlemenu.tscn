@@ -1,0 +1,86 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://battleuialpha.png" type="Texture" id=1]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 2
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=1]
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+corner_detail = 4
+anti_aliasing = false
+anti_aliasing_size = 0.01
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="."]
+anchor_right = 0.481
+anchor_bottom = 0.161
+margin_right = 0.0799866
+margin_bottom = 0.0199966
+rect_pivot_offset = Vector2( 57, 74 )
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.012
+anchor_top = 0.044
+anchor_right = 0.066
+anchor_bottom = 0.133
+margin_left = 0.16
+margin_top = 0.0799994
+margin_right = -1.12
+margin_bottom = 0.0599995
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BashIcon" type="Sprite" parent="."]
+position = Vector2( 8, 10 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 1, 8, 12 )
+
+[node name="SpecialIcon" type="Sprite" parent="."]
+position = Vector2( 36, 10 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 22, 1, 13, 12 )
+
+[node name="GoodsIcon" type="Sprite" parent="."]
+position = Vector2( 69, 10 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 44, 1, 14, 12 )
+
+[node name="GuardIcon" type="Sprite" parent="."]
+position = Vector2( 103, 10 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 67, 1, 10, 12 )
+
+[node name="FleeIcon" type="Sprite" parent="."]
+position = Vector2( 133, 10 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 86, 1, 12, 12 )
